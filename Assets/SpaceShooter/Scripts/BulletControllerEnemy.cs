@@ -28,5 +28,9 @@ public class BulletControllerEnemy : MonoBehaviour {
         {
             gameObject.SetActive(false);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -22,12 +22,9 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         body.velocity = new Vector3(x, y, 0) * speed;
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            GameObject bullet = Spawner.Spawn("Bullet");
-            bullet.transform.position = transform.position;
-            bullet.GetComponent<BulletController>().Fire(Vector2.right);
-        }
+        HoldShot();
+
+
 
         ClampToScreen(renderer.bounds.extents.x);
         ClampToScreen(-renderer.bounds.extents.x);
@@ -74,6 +71,29 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "shieldPU")
         {
             ShieldController.ShieldActive(true);
+        }
+    }
+
+    float holdTime = 0;
+    public void HoldShot()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            holdTime = Time.time;
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            GameObject bullet = null;
+            if (Time.time - holdTime > 3f)
+            {
+                bullet = Spawner.Spawn("HoldAttack");
+            }
+            else
+            {
+                bullet = Spawner.Spawn("Bullet");
+            }
+            bullet.transform.position = transform.position;
+            bullet.GetComponent<BulletController>().Fire(Vector2.right);
         }
     }
 }

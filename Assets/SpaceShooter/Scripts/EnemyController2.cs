@@ -8,6 +8,7 @@ public class EnemyController2 : MonoBehaviour {
     private Rigidbody2D body;
     public Vector3 view;
     public int points = 10;
+    GameObject death;
 
     void Start()
     {
@@ -66,7 +67,9 @@ public class EnemyController2 : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            //StartCoroutine("deathTimer");
+            death = Spawner.Spawn("EnemyDeath");
+            death.transform.position = transform.position;
+            death.GetComponent<DeathController>().Die();
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
@@ -75,9 +78,19 @@ public class EnemyController2 : MonoBehaviour {
 
         if (collision.gameObject.tag == "shield")
         {
-            //StartCoroutine("deathTimer");
+            death = Spawner.Spawn("EnemyDeath");
+            death.transform.position = transform.position;
+            death.GetComponent<DeathController>().Die();
             gameObject.SetActive(false);
            
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            death = Spawner.Spawn("EnemyDeath");
+            death.transform.position = transform.position;
+            death.GetComponent<DeathController>().Die();
+            gameObject.SetActive(false);
+
         }
     }
 
@@ -87,14 +100,5 @@ public class EnemyController2 : MonoBehaviour {
         {
             GameManager.instance.DropPowerUp(transform.position);
         }
-    }
-
-    IEnumerator deathTimer()
-    {
-        GameObject death = Spawner.Spawn("EnemyDeath");
-        death.transform.position = transform.position;
-        death.SetActive(true);
-        yield return new WaitForSeconds(1);
-        death.SetActive(false);
     }
 }
