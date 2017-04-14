@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
 
     void Start ()
     {
+        Cursor.visible = false;
         StartCoroutine("SpawnEnemiesCoroutine");
         livesUI.text = "Lives: " + lives;
         scoreUI.text = "Score: " + score;
@@ -131,6 +132,19 @@ public class GameManager : MonoBehaviour {
         
         power.transform.position = pos;
         power.SetActive(true);
+    }
+
+    public static void AddLife()
+    {
+        if (instance.lives < 5)
+        {
+            instance.lives = instance.lives + 1;
+            instance.livesUI.text = "Lives: " + instance.lives;
+        }
+        else
+        {
+            Debug.Log("Max Lives");
+        }
     }
 }
     

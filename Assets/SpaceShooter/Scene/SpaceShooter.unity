@@ -140,6 +140,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224586385127085204, guid: 406957d87848e31448aa8f6d88d6d5f9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -274,6 +279,41 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1377739167}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MenuScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950094288442178, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114112034145600044, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: spaceShooter
+      value: MenuScreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 406957d87848e31448aa8f6d88d6d5f9, type: 2}
@@ -506,6 +546,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1409103407379062, guid: 406957d87848e31448aa8f6d88d6d5f9,
     type: 2}
   m_PrefabInternal: {fileID: 129808014}
+--- !u!114 &1377739167 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114112034145600044, guid: 406957d87848e31448aa8f6d88d6d5f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 129808014}
+  m_Script: {fileID: 11500000, guid: 503bd5cdd36a72f4c93de604e6c8642b, type: 3}
 --- !u!114 &1377739169 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114042942306625114, guid: 406957d87848e31448aa8f6d88d6d5f9,
@@ -551,6 +597,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0468c463f869b594687ce1f14c090980, type: 3}
   - {fileID: 8300000, guid: f0048336b6dc6b0418ca4d9bbbaa0eda, type: 3}
   - {fileID: 8300000, guid: 9cc770094e2f012409de851a9b7de2b3, type: 3}
+  - {fileID: 8300000, guid: 550678d615309f441aa60de323c4429c, type: 3}
   sfxSourceCount: 5
 --- !u!4 &1907813623
 Transform:
@@ -671,10 +718,11 @@ MonoBehaviour:
   - {fileID: 1908889789743240, guid: bf0dd537afb405f4db36fc27693bf979, type: 2}
   - {fileID: 1884576684937764, guid: 4cd81e0c5efbfdd41a2cdb62c1a9800c, type: 2}
   - {fileID: 1733468177816028, guid: c19104bf953f712499d38a60d7cc1fbf, type: 2}
-  - {fileID: 1196013821696506, guid: f11064b00f5812447971c7ea09ec941d, type: 2}
+  - {fileID: 1473575618342976, guid: 6da91969bf226064997541e0c82375b0, type: 2}
   - {fileID: 1637129688347172, guid: 79a327cacd5f294479c2ef40e51ff6d7, type: 2}
   - {fileID: 1718762111941614, guid: 37925e8f27f6bd74287947d9075ddf11, type: 2}
   - {fileID: 1320721086258074, guid: 1af9c83892286cf47aa866542c162f20, type: 2}
+  - {fileID: 1768037674997090, guid: 2339ca81dda38e64ea2a2ce557c2fc7e, type: 2}
 --- !u!114 &1951117850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,7 +743,8 @@ MonoBehaviour:
   - Alien
   - EyeAlien
   PowerUpPrefabNames:
-  - Cube
+  - ShieldPU
+  - Life
   score: 0
   highScore: 0
   lives: 3

@@ -12,6 +12,7 @@ TagManager:
   - shield
   - shieldPU
   - ShieldDestroyer
+  - Life
   layers:
   - Default
   - TransparentFX

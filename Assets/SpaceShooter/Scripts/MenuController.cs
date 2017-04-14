@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
 
-	public void LoadScene (string SpaceShooter)
+    public string spaceShooter;
+    IEnumerator Start()
     {
-        SceneManager.LoadScene(SpaceShooter);
+        yield return new WaitForSeconds(2);
+        while (enabled)
+        {
+            Cursor.visible = false;
+            if (Input.GetButtonDown("Fire1"))
+            {
+                SceneManager.LoadScene(spaceShooter);
+            }
+            yield return new WaitForEndOfFrame();
+        }
     }
 }

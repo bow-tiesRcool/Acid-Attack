@@ -70,6 +70,7 @@ public class EnemyController2 : MonoBehaviour {
             death = Spawner.Spawn("EnemyDeath");
             death.transform.position = transform.position;
             death.GetComponent<DeathController>().Die();
+            AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
@@ -81,6 +82,7 @@ public class EnemyController2 : MonoBehaviour {
             death = Spawner.Spawn("EnemyDeath");
             death.transform.position = transform.position;
             death.GetComponent<DeathController>().Die();
+            AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
            
         }
@@ -89,6 +91,7 @@ public class EnemyController2 : MonoBehaviour {
             death = Spawner.Spawn("EnemyDeath");
             death.transform.position = transform.position;
             death.GetComponent<DeathController>().Die();
+            AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
 
         }

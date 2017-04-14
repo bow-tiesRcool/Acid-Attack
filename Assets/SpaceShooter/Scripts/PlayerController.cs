@@ -72,16 +72,20 @@ public class PlayerController : MonoBehaviour
         {
             ShieldController.ShieldActive(true);
         }
+        if (collision.gameObject.tag == "Life")
+        {
+            GameManager.AddLife();
+        }
     }
 
     float holdTime = 0;
     public void HoldShot()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Fire1"))
         {
             holdTime = Time.time;
         }
-        if (Input.GetButtonUp("Jump"))
+        if (Input.GetButtonUp("Fire1"))
         {
             GameObject bullet = null;
             if (Time.time - holdTime > 3f)
