@@ -1,0 +1,1560 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4059 MB
+    Driver:   21.21.13.7320
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.276 seconds
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Evan Kiser\Projects\SpaceShooter\SpaceShooter(Finish2)_ekiser_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 1.484720 ms
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.548324 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 511.
+Total: 0.504205 ms (FindLiveObjects: 0.041846 ms CreateObjectMapping: 0.024615 ms MarkObjects: 0.419282 ms  DeleteObjects: 0.017641 ms)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.432824 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 502.
+Total: 0.622770 ms (FindLiveObjects: 0.045128 ms CreateObjectMapping: 0.027897 ms MarkObjects: 0.429128 ms  DeleteObjects: 0.118564 ms)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.930052 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 535.
+Total: 0.491487 ms (FindLiveObjects: 0.050871 ms CreateObjectMapping: 0.028307 ms MarkObjects: 0.391795 ms  DeleteObjects: 0.019282 ms)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Spawning PowerUp
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Cannot load scene: Invalid scene name (empty string) and invalid build index -1
+ 
+(Filename:  Line: 141)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 51cc -> priority: 1 
+  Thread -> id: 1ffc -> priority: 1 

@@ -332,6 +332,11 @@ Prefab:
       propertyPath: spaceShooter
       value: MenuScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 114660163808962972, guid: 406957d87848e31448aa8f6d88d6d5f9,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 406957d87848e31448aa8f6d88d6d5f9, type: 2}
   m_IsPrefabParent: 0
