@@ -38,9 +38,10 @@ GameObject:
   - component: {fileID: 4703912052602052}
   - component: {fileID: 50130833002264392}
   - component: {fileID: 61022995101407818}
+  - component: {fileID: 114095417221650052}
   m_Layer: 0
   m_Name: StarEnemy
-  m_TagString: Untagged
+  m_TagString: EyeAlien
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -134,6 +135,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114095417221650052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1342395747625370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c611967389ed242b229364a83f97ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  ShootSpeed: 50
+  view: {x: 0, y: 0, z: 0}
+  points: 20
 --- !u!212 &212653624104119836
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour {
     public int points = 20;
     GameObject death;
 
-    void Start()
+    public void Start()
     {
         body = GetComponent<Rigidbody2D>();
 

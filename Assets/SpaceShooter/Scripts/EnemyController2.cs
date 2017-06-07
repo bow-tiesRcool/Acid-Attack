@@ -33,7 +33,7 @@ public class EnemyController2 : MonoBehaviour {
     IEnumerator EnemyMovement()
     {
         body.velocity = Vector2.left * speed;
-        yield return new WaitForSeconds(Random.Range(1, 5));
+        yield return new WaitForSeconds(Random.Range(1, 4));
         body.velocity = Vector2.up * speed;
         StartCoroutine("Attack");
         while (enabled)
