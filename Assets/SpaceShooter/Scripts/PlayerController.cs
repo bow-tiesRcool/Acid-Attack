@@ -9,10 +9,29 @@ public class PlayerController : MonoBehaviour
     public float ShootSpeed = 50;
     Renderer renderer;
     private Rigidbody2D body;
+    public SpriteRenderer sprite;
+    public Collider2D playerCollider;
+    public int superBulletAmount = 0;
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        playerCollider = GetComponent<Collider2D>();
         renderer = GetComponentInChildren<Renderer>();
     }
 
@@ -51,21 +70,21 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.SetActive(false);
             AudioManager.PlayEffect("Explosion20", 1, 1);
-            ExplosionSpawner.SpawnExplosion(transform.position);
+            ExplosionSpawner.instance.SpawnExplosion(transform.position);
             GameManager.LifeLost();
         }
         if (collision.gameObject.tag == "EyeAlien")
         {
             gameObject.SetActive(false);
             AudioManager.PlayEffect("Explosion20", 1, 1);
-            ExplosionSpawner.SpawnExplosion(transform.position);
+            ExplosionSpawner.instance.SpawnExplosion(transform.position);
             GameManager.LifeLost();
         }
         if (collision.gameObject.tag == "Alien")
         {
             gameObject.SetActive(false);
             AudioManager.PlayEffect("Explosion20", 1, 1);
-            ExplosionSpawner.SpawnExplosion(transform.position);
+            ExplosionSpawner.instance.SpawnExplosion(transform.position);
             GameManager.LifeLost();
         }
         if (collision.gameObject.tag == "shieldPU")
@@ -75,6 +94,11 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Life")
         {
             GameManager.AddLife();
+        }
+        if (collision.gameObject.tag == "SuperBulletPower")
+        {
+            ++instance.superBulletAmount;
+            GameManager.instance.superBullet.text = "Super Bullets: " + instance.superBulletAmount;
         }
     }
 
@@ -88,9 +112,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             GameObject bullet = null;
-            if (Time.time - holdTime > 3f)
+            if (Time.time - holdTime > 3f && instance.superBulletAmount > 0)
             {
                 bullet = Spawner.Spawn("HoldAttack");
+                AudioManager.PlayEffect("Randomize45", 1, 1);
+                --instance.superBulletAmount;
+                GameManager.instance.superBullet.text = "Super Bullets: " + instance.superBulletAmount;
             }
             else
             {

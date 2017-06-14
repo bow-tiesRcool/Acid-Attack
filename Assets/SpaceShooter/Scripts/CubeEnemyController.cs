@@ -56,6 +56,7 @@ public class CubeEnemyController : MonoBehaviour {
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
+            GameManager.EnemyTilBoss();
 
         }
         if (collision.gameObject.tag == "shield")

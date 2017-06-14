@@ -17,7 +17,13 @@ public class ExplosionSpawner : MonoBehaviour {
             instance = this;
         }
     }
-    public static void SpawnExplosion(Vector3 position)
+
+    public void Reset()
+    {
+        explosionPool = new List<ExplosionController>();
+    } 
+
+    public void SpawnExplosion(Vector3 position)
     {
         instance.ExplosionCreator(position);
     }

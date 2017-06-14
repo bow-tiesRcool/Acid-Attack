@@ -13,6 +13,8 @@ TagManager:
   - shieldPU
   - ShieldDestroyer
   - Life
+  - HoldAttack
+  - SuperBulletPower
   layers:
   - Default
   - TransparentFX

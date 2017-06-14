@@ -74,7 +74,7 @@ public class EnemyController2 : MonoBehaviour {
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
-            
+            GameManager.EnemyTilBoss();
         }
 
         if (collision.gameObject.tag == "shield")

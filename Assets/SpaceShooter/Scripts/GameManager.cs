@@ -10,53 +10,69 @@ public class GameManager : MonoBehaviour {
     public Text scoreUI;
     public Text highScoreUI;
     public Text livesUI;
+    public Text levelComplete;
+    public Text superBullet;
     public string Player = "Player";
-    public string[] enemyPrefabNames;
     public string[] PowerUpPrefabNames;
     public int score = 0;
     public int highScore;
     public int lives = 3;
+    public int enemyAmount = 100;
     [Range(0, 1)] public float powerUpChance = 0.1f;
+    public float timer = 10;
+
+    private MenuControllerLevel menuController;
+    private MenuControllerLevel menuScreen;
+    private Spawner spawnerController;
+    public bool bossSpawned = false;
 
     private void Awake()
     {
+        spawnerController = GetComponent<Spawner>();
+        menuController = GetComponentInChildren<MenuControllerLevel>();
+        menuController.gameObject.SetActive(false);
+        menuScreen = GetComponentInChildren<MenuControllerLevel>();
+        menuScreen.gameObject.SetActive(false);
+
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            instance.spawnerController.prefabs = this.spawnerController.prefabs;
+            instance.spawnerController.boss = this.spawnerController.boss;
+            instance.spawnerController.enemyPrefabNames = this.spawnerController.enemyPrefabNames;
+            instance.spawnerController.spawn = true;
+            instance.spawnerController.Reset();
+
+            instance.menuController.level = this.menuController.level;
+            instance.menuScreen.level = this.menuScreen.level;
+            instance.levelComplete.gameObject.SetActive(false);
+            instance.gameOverUI.gameObject.SetActive(false);
+            ExplosionSpawner.instance.Reset();
+            ExplosionSpawner.instance.SpawnExplosion(new Vector3(-30,0,0));
+            instance.spawnerController.StartCoroutine("SpawnEnemiesCoroutine");
+            Destroy(gameObject);
         }
     } 
 
     void Start ()
     {
         Cursor.visible = false;
-        StartCoroutine("SpawnEnemiesCoroutine");
+
+        Spawner.spawner.StartCoroutine("SpawnEnemiesCoroutine");
         livesUI.text = "Lives: " + lives;
         scoreUI.text = "Score: " + score;
         instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
-        GameObject player = Spawner.Spawn(Player);
-        player.transform.position = new Vector2(-20, 0);
-        player.SetActive(true);
+        PlayerController.instance.transform.position = new Vector2(-20, 0);
+        PlayerController.instance.gameObject.SetActive(true);
     }
 
     private void Update()
     {
         HighScore();
-    }
-
-    IEnumerator SpawnEnemiesCoroutine()
-    {
-        while (enabled)
-        {
-            yield return new WaitForSeconds(1);
-
-            string enemyPrefabName = enemyPrefabNames[Random.Range(0, enemyPrefabNames.Length)];
-
-            GameObject enemy = Spawner.Spawn(enemyPrefabName);
-            Vector3 pos = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, Random.Range(.1f,.9f), -Camera.main.transform.position.z));
-
-            enemy.transform.position = pos;
-            enemy.SetActive(true);
-        }
     }
 
     public static void GameOver()
@@ -116,9 +132,7 @@ public class GameManager : MonoBehaviour {
         else
         {
             instance.livesUI.text = "Lives: " + instance.lives;
-            GameObject player = Spawner.Spawn(instance.Player);
-            player.transform.position = new Vector2(-20, 0);
-            player.SetActive(true);
+            instance.StartCoroutine("SpawnTimer");
 
         }
     }
@@ -129,7 +143,8 @@ public class GameManager : MonoBehaviour {
         string PowerUpPrefabName = PowerUpPrefabNames[Random.Range(0, PowerUpPrefabNames.Length)];
 
         GameObject power = Spawner.Spawn(PowerUpPrefabName);
-        
+        AudioManager.PlayEffect("Powerup11", 1, 1);
+
         power.transform.position = pos;
         power.SetActive(true);
     }
@@ -145,6 +160,62 @@ public class GameManager : MonoBehaviour {
         {
             Debug.Log("Max Lives");
         }
+    }
+
+    public static void EnemyTilBoss()
+    {
+        --instance.enemyAmount;
+
+        if (instance.enemyAmount <= 0 && !instance.bossSpawned)
+        {
+            Spawner.spawner.spawn = false;
+            instance.StartCoroutine("BossSpawn");
+
+        }
+    }
+
+    IEnumerator BossSpawn()
+    {
+        instance.bossSpawned = true;
+        yield return new WaitForSeconds(timer);
+
+        GameObject bossEnemy = Spawner.BossSpawn();
+        AudioManager.PlayEffect("Randomize42", 1, 1);
+        bossEnemy.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(1f, .5f, -Camera.main.transform.position.z));
+        bossEnemy.SetActive(true);
+    }
+
+    public void BossDefeated()
+    {
+        levelComplete.text = "Level complete!";
+        levelComplete.gameObject.SetActive(true);
+        instance.bossSpawned = false;
+        instance.enemyAmount = 75;
+        Spawner.spawner.spawn = true;
+    }
+
+    IEnumerator SpawnTimer()
+    {
+        PlayerController.instance.transform.position = new Vector2(-20, 0);
+        PlayerController.instance.gameObject.SetActive(true);
+        PlayerController.instance.playerCollider.enabled = false;
+        yield return StartCoroutine(Flash(.5f, .1f));
+        PlayerController.instance.playerCollider.enabled = true;
+        yield return null;
+
+    }
+
+    public IEnumerator Flash(float time, float interval)
+    {
+        for(float i = 0; i < time; i += Time.deltaTime)
+        {
+            Debug.Log(i);
+            PlayerController.instance.sprite.enabled = true;
+            yield return new WaitForSeconds(interval);
+            PlayerController.instance.sprite.enabled = false;
+            yield return new WaitForSeconds(interval);
+        }
+        yield return PlayerController.instance.sprite.enabled = true;
     }
 }
     

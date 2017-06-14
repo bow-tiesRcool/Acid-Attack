@@ -39,6 +39,7 @@ public class StarEnemyController : MonoBehaviour {
         body.velocity = Vector2.left * 0;
         yield return new WaitForSeconds(Random.Range(1, 2));
         body.velocity = Vector2.left * ShootSpeed;
+        AudioManager.PlayEffect("Randomize74", 1, 1);
         yield return new WaitForEndOfFrame();
 
     }
@@ -49,6 +50,7 @@ public class StarEnemyController : MonoBehaviour {
         {
             yield return new WaitForSeconds(Random.Range(1, 5));
             body.velocity = Vector2.left * ShootSpeed;
+            AudioManager.PlayEffect("Randomize74", 1, 1);
             yield return new WaitForEndOfFrame();
         }
     }
@@ -64,6 +66,7 @@ public class StarEnemyController : MonoBehaviour {
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
+            GameManager.EnemyTilBoss();
 
         }
         if (collision.gameObject.tag == "shield")

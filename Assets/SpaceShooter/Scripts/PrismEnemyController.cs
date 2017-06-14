@@ -79,6 +79,7 @@ public class PrismEnemyController : MonoBehaviour {
             gameObject.SetActive(false);
             GameManager.Points(points);
             SpawnPowerUp();
+            GameManager.EnemyTilBoss();
 
         }
 
