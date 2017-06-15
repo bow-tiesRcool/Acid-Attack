@@ -9,27 +9,48 @@ public class CubeEnemyBossController : MonoBehaviour {
     private Rigidbody2D body;
     public int points = 100;
     public int life = 50;
+    public Vector3 view;
     GameObject death;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        StartCoroutine("Attack");
-
+        StartCoroutine("EnemyMovement");
     }
 
     void Update()
     {
-        body.velocity = Vector2.left * speed;
+        view = Camera.main.WorldToViewportPoint(transform.position);
         OffScreenCheck();
     }
 
     void OffScreenCheck()
     {
-        Vector3 view = Camera.main.WorldToViewportPoint(transform.position);
         if (view.x < 0)
         {
             gameObject.SetActive(false);
+            GameManager.instance.BossDefeated();
+        }
+    }
+
+    IEnumerator EnemyMovement()
+    {
+        body.velocity = Vector2.left * speed;
+        yield return new WaitForSeconds(Random.Range(1, 4));
+        body.velocity = Vector2.up * speed;
+        StartCoroutine("Attack");
+        while (enabled)
+        {
+
+            if (view.y > .9f)
+            {
+                body.velocity = Vector2.down * speed;
+            }
+            if (view.y < 0.1f)
+            {
+                body.velocity = Vector2.up * speed;
+            }
+            yield return new WaitForEndOfFrame();
         }
     }
 
@@ -37,11 +58,14 @@ public class CubeEnemyBossController : MonoBehaviour {
     {
         while (enabled)
         {
-            yield return new WaitForSeconds(Random.Range(10, 20));
-            GameObject alien = Spawner.Spawn("EyeAlienBoss");
-            alien.gameObject.SetActive(true);
-            alien.transform.position = transform.position + Vector3.down;
-            alien.GetComponent<EnemyController>().Start();
+            yield return new WaitForSeconds(Random.Range(1, 5));
+            for (int i = 0; i <= 20; i++)
+            {
+                GameObject alien = Spawner.Spawn("EyeAlien");
+                alien.gameObject.SetActive(true);
+                alien.transform.position = transform.position + Vector3.down;
+                yield return new WaitForSeconds(.25f);
+            }
             yield return new WaitForEndOfFrame();
         }
     }

@@ -501,6 +501,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1320721086258074, guid: 310d005971f634c46a571d0d580fffdb,
         type: 2}
+    - target: {fileID: 114128921110625614, guid: 71cf4c8df618ed74ab1d1cb8477abfcd,
+        type: 2}
+      propertyPath: enemyAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71cf4c8df618ed74ab1d1cb8477abfcd, type: 2}
   m_IsPrefabParent: 0
