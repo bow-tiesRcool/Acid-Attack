@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 50658297017906284}
   - component: {fileID: 60076675731503790}
   - component: {fileID: 114253408431124242}
+  - component: {fileID: 95668936216158354}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Alien
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884576684937764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.048695, y: 0.6603371, z: 0}
+  m_LocalPosition: {x: -7.8212914, y: -5.15298, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4960252993285432}
@@ -103,7 +104,17 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
     m_Paths:
     - - {x: 0, y: 0.88734186}
@@ -111,6 +122,23 @@ PolygonCollider2D:
       - {x: 0.4828415, y: -0.9448309}
       - {x: -0.6104202, y: -0.94123137}
       - {x: -0.60588837, y: 0.60171914}
+--- !u!95 &95668936216158354
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884576684937764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe7b611d2f3b1d941bb888c9c3f9767f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114253408431124242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,6 +153,7 @@ MonoBehaviour:
   speed: 10
   ShootSpeed: 50
   view: {x: 0, y: 0, z: 0}
+  points: 10
 --- !u!212 &212206826751924522
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -155,8 +184,13 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 444975d22d944fa409d9b7f5ab17df7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60ab150044cd8a4d94f77c12ee3b386, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0

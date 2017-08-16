@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SpaceShooter/Scene/Level5.unity
     guid: 3077e5726e6a0004f912031358d6a8cb
+  - enabled: 1
+    path: Assets/SpaceShooter/Scene/Level6.unity
+    guid: 7ae79c9504bc08b4c965c49728be9912

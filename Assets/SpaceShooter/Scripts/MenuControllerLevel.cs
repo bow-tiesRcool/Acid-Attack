@@ -5,22 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuControllerLevel : MonoBehaviour {
 
-    //public static MenuControllerLevel instance;
     public string level;
-
-    //private void Awake()
-    //{
-    //    if (instance == null)
-    //    {
-    //        instance = this;
-    //        DontDestroyOnLoad(gameObject);
-    //    }
-    //    else
-    //    {
-    //        instance.level = this.level;
-    //        Destroy(gameObject);
-    //    }
-    //}
 
     private void OnEnable()
     {

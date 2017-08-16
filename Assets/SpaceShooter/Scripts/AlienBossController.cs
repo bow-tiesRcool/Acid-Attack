@@ -11,6 +11,20 @@ public class AlienBossController : MonoBehaviour {
     public int points = 100;
     public int life = 50;
     GameObject death;
+    public static AlienBossController instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            instance.StartCoroutine("EnemyMovement");
+        }
+    }
 
     void Start()
     {
@@ -20,6 +34,7 @@ public class AlienBossController : MonoBehaviour {
 
     void Update()
     {
+        
         view = Camera.main.WorldToViewportPoint(transform.position);
         OffScreenCheck();
     }
@@ -109,6 +124,7 @@ public class AlienBossController : MonoBehaviour {
             AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
             GameManager.instance.BossDefeated();
+            life = 50;
         }
     }
 }

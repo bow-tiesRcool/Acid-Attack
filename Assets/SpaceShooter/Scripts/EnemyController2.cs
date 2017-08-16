@@ -9,10 +9,12 @@ public class EnemyController2 : MonoBehaviour {
     public Vector3 view;
     public int points = 10;
     GameObject death;
+    private Animator anim;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         StartCoroutine("EnemyMovement");
     }
 
@@ -56,10 +58,13 @@ public class EnemyController2 : MonoBehaviour {
         while (enabled)
         {
             yield return new WaitForSeconds(Random.Range(1, 5));
+            anim.SetBool("Attack", true);
+            yield return new WaitForEndOfFrame();
             GameObject bullet = Spawner.Spawn("AlienAttack");
             bullet.transform.position = transform.position;
             bullet.GetComponent<BulletControllerEnemy>().Fire(Vector2.left);
             yield return new WaitForEndOfFrame();
+            anim.SetBool("Attack", false);
         }
     }
 

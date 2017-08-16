@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     public static Spawner spawner;
     public string boss;
     public string[] enemyPrefabNames;
+    public string[] enemyBossNames;
     public bool spawn = true;
 
     public GameObject[] prefabs;
@@ -86,5 +87,16 @@ public class Spawner : MonoBehaviour
             enemy.transform.position = pos;
             enemy.SetActive(true);
         }
+    }
+
+    public void SpawnRandomBoss()
+    {
+            string enemyBossName = enemyBossNames[Random.Range(0, enemyBossNames.Length)];
+
+            GameObject enemy = Spawner.Spawn(enemyBossName);
+            Vector3 pos = Camera.main.ViewportToWorldPoint(new Vector3(1f, .5f, -Camera.main.transform.position.z));
+
+            enemy.transform.position = pos;
+            enemy.SetActive(true);
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class CubeEnemyBossController : MonoBehaviour {
 
     public float speed = 5;
@@ -11,6 +10,20 @@ public class CubeEnemyBossController : MonoBehaviour {
     public int life = 50;
     public Vector3 view;
     GameObject death;
+    public static CubeEnemyBossController instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            instance.StartCoroutine("EnemyMovement");
+        }
+    }
 
     void Start()
     {
@@ -113,6 +126,7 @@ public class CubeEnemyBossController : MonoBehaviour {
             AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
             GameManager.instance.BossDefeated();
+            life = 50;
         }
     }
 }

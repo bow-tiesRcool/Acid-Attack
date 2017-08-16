@@ -17,6 +17,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - <noninit>:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -40,7 +44,7 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: da3e7d638c51e1a43ba13c6b7430b2f8, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0.3469209, y: 0}
+        m_Offset: {x: 0.0075360537, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,6 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - <noninit>: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -71,5 +76,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - <noninit>: {r: 0, g: 8.0735845e-35, b: 0, a: 8.073548e-35}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

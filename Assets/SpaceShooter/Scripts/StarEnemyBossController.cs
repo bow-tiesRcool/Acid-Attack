@@ -11,6 +11,20 @@ public class StarEnemyBossController : MonoBehaviour {
     public int points = 100;
     public int life = 50;
     GameObject death;
+    public static StarEnemyBossController instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            instance.StartCoroutine("EnemyMovement");
+        }
+    }
 
     void Start()
     {
@@ -37,9 +51,9 @@ public class StarEnemyBossController : MonoBehaviour {
     IEnumerator EnemyMovement()
     {
         body.velocity = Vector2.left * speed;
-        yield return new WaitForSeconds(Random.Range(1, 2));
+        yield return new WaitForSeconds(Random.Range(2, 3));
         body.velocity = Vector2.left * 0;
-        yield return new WaitForSeconds(Random.Range(20, 50));
+        yield return new WaitForSeconds(Random.Range(20, 30));
         body.velocity = Vector2.left * ShootSpeed;
         AudioManager.PlayEffect("Randomize74", 1, 1);
         yield return new WaitForEndOfFrame();
@@ -50,7 +64,7 @@ public class StarEnemyBossController : MonoBehaviour {
     {
         while (enabled)
         {
-            yield return new WaitForSeconds(Random.Range(20, 50));
+            yield return new WaitForSeconds(Random.Range(20, 30));
             body.velocity = Vector2.left * ShootSpeed;
             yield return new WaitForEndOfFrame();
         }
@@ -99,6 +113,7 @@ public class StarEnemyBossController : MonoBehaviour {
             AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
             GameManager.instance.BossDefeated();
+            life = 50;
         }
     }
 }

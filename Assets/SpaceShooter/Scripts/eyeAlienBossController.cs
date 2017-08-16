@@ -74,6 +74,7 @@ public class eyeAlienBossController : MonoBehaviour {
             AudioManager.PlayEffect("Randomize33", 1, 1);
             gameObject.SetActive(false);
             GameManager.instance.BossDefeated();
+            life = 50;
         }
     }
 }

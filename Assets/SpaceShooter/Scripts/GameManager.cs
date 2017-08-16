@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
     public int enemyAmount = 100;
     [Range(0, 1)] public float powerUpChance = 0.1f;
     public float timer = 10;
+    public string scene;
 
     private MenuControllerLevel menuController;
     private MenuControllerLevel menuScreen;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour {
         menuController.gameObject.SetActive(false);
         menuScreen = GetComponentInChildren<MenuControllerLevel>();
         menuScreen.gameObject.SetActive(false);
+        scene = SceneManager.GetActiveScene().name;
 
         if (instance == null)
         {
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour {
             instance.spawnerController.prefabs = this.spawnerController.prefabs;
             instance.spawnerController.boss = this.spawnerController.boss;
             instance.spawnerController.enemyPrefabNames = this.spawnerController.enemyPrefabNames;
+            instance.spawnerController.enemyBossNames = this.spawnerController.enemyBossNames;
             instance.spawnerController.spawn = true;
             instance.spawnerController.Reset();
 
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour {
             ExplosionSpawner.instance.Reset();
             ExplosionSpawner.instance.SpawnExplosion(new Vector3(-30,0,0));
             instance.spawnerController.StartCoroutine("SpawnEnemiesCoroutine");
+            instance.scene = this.scene;
             Destroy(gameObject);
         }
     } 
@@ -68,6 +72,7 @@ public class GameManager : MonoBehaviour {
         instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
         PlayerController.instance.transform.position = new Vector2(-20, 0);
         PlayerController.instance.gameObject.SetActive(true);
+        scene = SceneManager.GetActiveScene().name;
     }
 
     private void Update()
@@ -178,20 +183,38 @@ public class GameManager : MonoBehaviour {
     {
         instance.bossSpawned = true;
         yield return new WaitForSeconds(timer);
-
-        GameObject bossEnemy = Spawner.BossSpawn();
-        AudioManager.PlayEffect("Randomize42", 1, 1);
-        bossEnemy.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(1f, .5f, -Camera.main.transform.position.z));
-        bossEnemy.SetActive(true);
+        if (instance.scene == "Level6")
+        {
+            Spawner.spawner.SpawnRandomBoss();
+            AudioManager.PlayEffect("Randomize42", 1, 1);
+        }
+        else
+        {
+            GameObject bossEnemy = Spawner.BossSpawn();
+            AudioManager.PlayEffect("Randomize42", 1, 1);
+            bossEnemy.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(1f, .5f, -Camera.main.transform.position.z));
+            bossEnemy.SetActive(true);
+        }
     }
 
     public void BossDefeated()
     {
-        levelComplete.text = "Level complete!";
-        levelComplete.gameObject.SetActive(true);
-        instance.bossSpawned = false;
-        instance.enemyAmount = 75;
-        Spawner.spawner.spawn = true;
+        if (instance.scene == "Level6")
+        {
+            instance.spawnerController.Reset();
+            instance.bossSpawned = false;
+            instance.enemyAmount = 75;
+            Spawner.spawner.spawn = true;
+            Spawner.spawner.StartCoroutine("SpawnEnemiesCoroutine");
+        }
+        else
+        {
+            levelComplete.text = "Level complete!";
+            levelComplete.gameObject.SetActive(true);
+            instance.bossSpawned = false;
+            instance.enemyAmount = 75;
+            Spawner.spawner.spawn = true;
+        }
     }
 
     IEnumerator SpawnTimer()
